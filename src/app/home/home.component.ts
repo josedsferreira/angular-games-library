@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home',
   imports: [GameEntryComponent, CommonModule],
   template: `
-    <section>
+    <section class="search">
       <form>
         <input type="text" placeholder="Filter by platform">
         <button type="submit">Search</button>
