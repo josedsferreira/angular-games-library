@@ -8,12 +8,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home',
   imports: [GameEntryComponent, CommonModule],
   template: `
-    <section class="search">
-      <form>
-        <input type="text" placeholder="Filter by platform">
-        <button type="submit">Search</button>
-      </form>
-    </section>
     <section class="results">
       <app-game-entry
         *ngFor="let game of gameList"

@@ -1,8 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground) !important;
+  background: var(--background) !important;
+  font-family: 'Lato', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: 'Lato', sans-serif;
   }

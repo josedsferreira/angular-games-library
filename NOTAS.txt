@@ -1,0 +1,5 @@
+TODO:
+
+    Criar componente so para a imagem de logotipo para trocar a src depndendo do darkmode
+
+    Ver como utilizar daisyUI
