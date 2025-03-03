@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home',
   imports: [GameEntryComponent, CommonModule],
   template: `
-    <section class="results">
+    <section class="grid auto-cols-max grid-flow-col gap-4 m-4">
       <app-game-entry
         *ngFor="let game of gameList"
         [game]="game">
