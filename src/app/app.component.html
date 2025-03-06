@@ -1,9 +1,25 @@
 
 <main class="main">
 
-  <header class="flex justify-between items-center">
+  <header class="navbar flex items-center bg-slate-200 dark:bg-slate-900 dark:text-neutral-300">
 
-    <app-logo></app-logo>
+    <a 
+    [routerLink]="['/']"
+    class="block">
+      <app-logo></app-logo>
+    </a>
+
+    <h1 class="text-xl font-bold mx-2 whitespace-nowrap">Game Library</h1>
+
+    <nav class="navbar py-0 flex items-center">
+      <a 
+      [routerLink]="['/']"
+      class="btn btn-ghost mt-1">Home</a>
+
+      <a 
+      [routerLink]="['/add-game']"
+      class="btn btn-ghost mt-1">Add new game</a>
+    </nav>
 
     <section >
       <form class="mx-2">

@@ -4,13 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-logo',
   imports: [],
   template: `
-    <img id="logo" 
-      src="title.png" 
-      class="h-18" 
-      id="logo"
-      alt="Library Logo and title 'Game Library'" 
-      aria-hidden="true"
-    />
+    <div class="flex items-center">
+      <img
+        src="library_logo.png" 
+        class="max-w-none h-12 object-contain flex-shrink-0"
+        alt="Library Logo" 
+        aria-hidden="true"
+      />
+    </div>
   `,
   styleUrl: './logo.component.css'
 })
@@ -26,17 +27,17 @@ export class LogoComponent implements OnInit {
 
     const updateLogo = (e: MediaQueryListEvent) => {
       if (e.matches) {
-        logo.src = 'title_dark.png';
+        logo.src = 'library_logo_dark.png';
       } else {
-        logo.src = 'title.png';
+        logo.src = 'library_logo.png';
       }
     };
 
     // Initial check
     if (darkModeMediaQuery.matches) {
-      logo.src = 'title_dark.png';
+      logo.src = 'library_logo_dark.png';
     } else {
-      logo.src = 'title.png';
+      logo.src = 'library_logo.png';
     }
 
     // Listen for changes
